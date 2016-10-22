@@ -12,6 +12,11 @@
 		4D06911C1DBA633C00FFDBB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D06911A1DBA633C00FFDBB0 /* Main.storyboard */; };
 		4D06911E1DBA633C00FFDBB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D06911D1DBA633C00FFDBB0 /* Assets.xcassets */; };
 		4D0691211DBA633C00FFDBB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D06911F1DBA633C00FFDBB0 /* LaunchScreen.storyboard */; };
+		4D06912F1DBB3DC300FFDBB0 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06912E1DBB3DC300FFDBB0 /* LeftMenuViewController.swift */; };
+		4D0691311DBB4BE300FFDBB0 /* ContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0691301DBB4BE300FFDBB0 /* ContentListViewController.swift */; };
+		4D0691331DBB532A00FFDBB0 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0691321DBB532A00FFDBB0 /* DeviceSize.swift */; };
+		4D0691361DBB535F00FFDBB0 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0691351DBB535F00FFDBB0 /* ListTableViewCell.swift */; };
+		4D0691381DBB537E00FFDBB0 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0691371DBB537E00FFDBB0 /* ListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4D06911D1DBA633C00FFDBB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0691201DBA633C00FFDBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0691221DBA633C00FFDBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D06912E1DBB3DC300FFDBB0 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		4D0691301DBB4BE300FFDBB0 /* ContentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListViewController.swift; sourceTree = "<group>"; };
+		4D0691321DBB532A00FFDBB0 /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
+		4D0691351DBB535F00FFDBB0 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		4D0691371DBB537E00FFDBB0 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,75 @@
 		4D0691151DBA633B00FFDBB0 /* iPhoneDesign */ = {
 			isa = PBXGroup;
 			children = (
+				4D0691281DBB3B0400FFDBB0 /* Library */,
+				4D0691291DBB3B1500FFDBB0 /* MainContentsController */,
+				4D06912A1DBB3B3300FFDBB0 /* SideMenuController */,
+				4D06912B1DBB3B3700FFDBB0 /* BaseViewController */,
 				4D0691161DBA633B00FFDBB0 /* AppDelegate.swift */,
-				4D0691181DBA633B00FFDBB0 /* ViewController.swift */,
 				4D06911A1DBA633C00FFDBB0 /* Main.storyboard */,
 				4D06911D1DBA633C00FFDBB0 /* Assets.xcassets */,
 				4D06911F1DBA633C00FFDBB0 /* LaunchScreen.storyboard */,
 				4D0691221DBA633C00FFDBB0 /* Info.plist */,
 			);
 			path = iPhoneDesign;
+			sourceTree = "<group>";
+		};
+		4D0691281DBB3B0400FFDBB0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4D0691321DBB532A00FFDBB0 /* DeviceSize.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4D0691291DBB3B1500FFDBB0 /* MainContentsController */ = {
+			isa = PBXGroup;
+			children = (
+				4D0691341DBB535600FFDBB0 /* ListTableViewCell */,
+				4D0691301DBB4BE300FFDBB0 /* ContentListViewController.swift */,
+			);
+			name = MainContentsController;
+			sourceTree = "<group>";
+		};
+		4D06912A1DBB3B3300FFDBB0 /* SideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				4D06912D1DBB3BA400FFDBB0 /* LeftMenu */,
+				4D06912C1DBB3B9900FFDBB0 /* RightMenu */,
+			);
+			name = SideMenuController;
+			sourceTree = "<group>";
+		};
+		4D06912B1DBB3B3700FFDBB0 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D0691181DBA633B00FFDBB0 /* ViewController.swift */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		4D06912C1DBB3B9900FFDBB0 /* RightMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RightMenu;
+			sourceTree = "<group>";
+		};
+		4D06912D1DBB3BA400FFDBB0 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4D06912E1DBB3DC300FFDBB0 /* LeftMenuViewController.swift */,
+			);
+			name = LeftMenu;
+			sourceTree = "<group>";
+		};
+		4D0691341DBB535600FFDBB0 /* ListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D0691351DBB535F00FFDBB0 /* ListTableViewCell.swift */,
+				4D0691371DBB537E00FFDBB0 /* ListTableViewCell.xib */,
+			);
+			name = ListTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0691211DBA633C00FFDBB0 /* LaunchScreen.storyboard in Resources */,
+				4D0691381DBB537E00FFDBB0 /* ListTableViewCell.xib in Resources */,
 				4D06911E1DBA633C00FFDBB0 /* Assets.xcassets in Resources */,
 				4D06911C1DBA633C00FFDBB0 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0691311DBB4BE300FFDBB0 /* ContentListViewController.swift in Sources */,
 				4D0691191DBA633B00FFDBB0 /* ViewController.swift in Sources */,
 				4D0691171DBA633B00FFDBB0 /* AppDelegate.swift in Sources */,
+				4D0691331DBB532A00FFDBB0 /* DeviceSize.swift in Sources */,
+				4D06912F1DBB3DC300FFDBB0 /* LeftMenuViewController.swift in Sources */,
+				4D0691361DBB535F00FFDBB0 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +362,7 @@
 				4D0691271DBA633C00FFDBB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
